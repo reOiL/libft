@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/05 17:45:56 by jwebber          ###   ########.fr       */
+/*   Created: 2019/09/05 17:44:33 by jwebber           #+#    #+#             */
+/*   Updated: 2019/09/05 17:54:58 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <string.h>
+void	ft_bzero(void *s, size_t n)
+{
+	size_t i;
 
-void	*ft_memset(void *b, int c, size_t len);
-
-void	ft_bzero(void *s, size_t n);
-
-#endif
+	i = 0;
+	while (i < n)
+	{
+		((char *)s)[i] = '\0';
+		i++;
+	}
+}
