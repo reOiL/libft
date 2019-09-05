@@ -6,13 +6,13 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 19:07:55 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/05 19:10:34 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/05 19:11:54 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	*memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t i;
 
