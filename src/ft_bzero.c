@@ -6,11 +6,11 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 17:44:33 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/05 18:15:16 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/05 18:41:50 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void	ft_bzero(void *s, size_t n)
 {
