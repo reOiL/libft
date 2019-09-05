@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/05 19:02:27 by jwebber          ###   ########.fr       */
+/*   Created: 2019/09/05 19:01:34 by jwebber           #+#    #+#             */
+/*   Updated: 2019/09/05 19:07:00 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <libft.h>
 
-# include <string.h>
+void	*ft_memmove(void *dst, const void *src, size_t len)
+{
+	size_t	i;
 
-void	*ft_memset(void *b, int c, size_t len);
-
-void	ft_bzero(void *s, size_t n);
-
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
-
-void	*ft_memmove(void *dst, const void *src, size_t len);
-
-#endif
+	i = 0;
+	while (i < len)
+	{
+		((char *)dst)[i] = ((const char *)src)[i];
+		i++;
+	}
+	return (dst);
+}
