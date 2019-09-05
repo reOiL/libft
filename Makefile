@@ -6,7 +6,7 @@
 #    By: jwebber <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 17:05:02 by jwebber           #+#    #+#              #
-#    Updated: 2019/09/05 19:04:50 by jwebber          ###   ########.fr        #
+#    Updated: 2019/09/05 19:10:11 by jwebber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ SRC = src/ft_memset.c \
 	  src/ft_bzero.c \
 	  src/ft_memcpy.c \
 	  src/ft_memccpy.c \
-	  src/ft_memmove.c
+	  src/ft_memmove.c \
+	  src/ft_memchr.c
 
 OBJ = $(SRC:.c=.o)
 
