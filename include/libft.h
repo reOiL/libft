@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/06 18:51:59 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/06 19:10:57 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size);
 char	*ft_strchr(const char *s, int c);
 
 char	*ft_strrchr(const char *s, int c);
+
+char	*ft_strstr(const char *haystack, const char *needle);
 
 #endif
