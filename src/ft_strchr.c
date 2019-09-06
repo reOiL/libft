@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 18:25:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/06 18:34:19 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/06 18:55:09 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s + i);
 		i++;
 	}
+	if (c == '\0')
+		return ((char *)s + i);
 	return (NULL);
 }
