@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/06 19:26:22 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/06 20:44:18 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strcat(char *s1, const char *s2);
 
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 char	*ft_strchr(const char *s, int c);
 
@@ -56,4 +56,5 @@ int		ft_strcmp(const char *s1, const char *s2);
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
+int		ft_atoi(const char *str);
 #endif

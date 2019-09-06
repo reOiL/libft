@@ -1,36 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/06 17:42:20 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/06 20:37:59 by jwebber          ###   ########.fr       */
+/*   Created: 2019/09/06 20:37:37 by jwebber           #+#    #+#             */
+/*   Updated: 2019/09/06 20:55:05 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+int		ft_atoi(const char *str)
 {
-	size_t	len1;
-	size_t	len2;
-	size_t	i;
-	size_t	j;
+	int	minus;
+	int	val;
+	int	i;
 
-	len1 = ft_strlen(dst);
-	len2 = ft_strlen(src);
-	if (len1 >= size)
-		return (len2 + size);
+	minus = 1;
 	i = 0;
-	j = len1 + 1;
-	while (src[i] != '\0' && j < size)
+	val = 0;
+	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' ||
+			str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		dst[j] = src[i];
-		j++;
+		if (str[i] == '-')
+			minus = -1;
 		i++;
 	}
-	dst[j] = '\0';
-	return (len1 + len2);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		val = (val * 10) + (str[i] - '0');
+		i++;
+	}
+	return (val * minus);
 }
