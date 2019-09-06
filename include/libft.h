@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/06 19:20:33 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/06 19:26:22 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,9 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strstr(const char *haystack, const char *needle);
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+
+int		ft_strcmp(const char *s1, const char *s2);
+
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
