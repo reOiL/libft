@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/06 17:28:39 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/06 17:32:11 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,7 @@ char	*ft_strdup(const char *src);
 char	*ft_strcpy(char *dst, const char *src);
 
 char	*ft_strncpy(char *dst, const char *src, size_t len);
+
+char	*ft_strcat(char *s1, const char *s2);
 
 #endif
