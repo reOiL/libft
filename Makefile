@@ -6,7 +6,7 @@
 #    By: jwebber <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 17:05:02 by jwebber           #+#    #+#              #
-#    Updated: 2019/09/08 09:12:43 by jwebber          ###   ########.fr        #
+#    Updated: 2019/09/08 09:15:23 by jwebber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,8 @@ SRC = src/ft_memset.c \
 	  src/ft_memalloc.c \
 	  src/ft_memdel.c \
 	  src/ft_strnew.c \
-	  src/ft_strdel.c
+	  src/ft_strdel.c \
+	  src/ft_strclr.c
 
 OBJ = $(SRC:.c=.o)
 
