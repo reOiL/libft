@@ -6,7 +6,7 @@
 #    By: jwebber <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 17:05:02 by jwebber           #+#    #+#              #
-#    Updated: 2019/09/06 21:22:46 by jwebber          ###   ########.fr        #
+#    Updated: 2019/09/08 08:42:23 by jwebber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,8 @@ SRC = src/ft_memset.c \
 	  src/ft_isdigit.c \
 	  src/ft_isalnum.c \
 	  src/ft_isascii.c \
-	  src/ft_isprint.c
+	  src/ft_isprint.c \
+	  src/ft_toupper.c
 
 OBJ = $(SRC:.c=.o)
 
