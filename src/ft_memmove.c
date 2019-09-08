@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 19:01:34 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 15:17:22 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 15:23:02 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	size_t	i;
 
 	i = 0;
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	if (dst < src)
 	{
 		while (i < len)
