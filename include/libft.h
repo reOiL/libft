@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 08:49:12 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 08:54:14 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,7 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 
 int		ft_tolower(int c);
+
+void	*ft_memalloc(size_t size);
 
 #endif
