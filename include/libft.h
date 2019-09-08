@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 09:39:18 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 09:57:54 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,7 @@ char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 int		ft_strequ(char const *s1, char const *s2);
+
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
 
 #endif
