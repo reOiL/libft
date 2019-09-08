@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 12:20:57 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 12:24:56 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,5 +106,7 @@ char	*ft_itoa(int n);
 void	ft_putchar(char c);
 
 void	ft_putstr(char const *s);
+
+void	ft_putendl(char const *s);
 
 #endif
