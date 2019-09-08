@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 11:30:49 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 12:14:51 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 15:54:52 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char			*ft_itoa(int n)
 	i = 0;
 	nb = n;
 	len = ft_int_len(nb);
-	ret = ft_strnew(len + 1);
+	ret = ft_strnew(len);
 	if (ret == NULL)
 		return (NULL);
 	if (nb < 0)
