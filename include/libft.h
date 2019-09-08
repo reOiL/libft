@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 09:18:15 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 09:24:02 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,5 +81,7 @@ void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 
 void	ft_striter(char *s, void (*f)(char *));
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif
