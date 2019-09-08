@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 13:07:24 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 13:24:26 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,5 +120,16 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 
 void	ft_putnbr_fd(int n, int fd);
+
+typedef struct s_list	t_list;
+
+struct	s_list
+{
+	void	*content;
+	size_t	content_size;
+	t_list	*next;
+};
+
+t_list	*ft_lstnew(void const *content, size_t content_size);
 
 #endif
