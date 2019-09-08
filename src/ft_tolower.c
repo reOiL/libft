@@ -6,13 +6,13 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 08:48:36 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 08:52:14 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 14:58:47 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_tolower(int c)
 {
-	if ((unsigned char)c >= 'A' && (unsigned char)c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
 	return (c);
 }
