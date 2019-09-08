@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 10:56:29 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 11:30:09 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 11:46:34 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,13 @@ static int	ft_word_count(char const *s, char c)
 
 char		**ft_strsplit(char const *s, char c)
 {
-	int		word_count;
 	char	**ret;
 	int		word_len;
 	int		i;
 
-	word_count = ft_word_count(s, c);
-	ret = (char **)malloc(sizeof(char *) * word_count);
+	ret = (char **)malloc(sizeof(char *) * ft_word_count(s, c));
+	if (ret == NULL)
+		return (NULL);
 	i = 0;
 	while (*s != '\0')
 	{
@@ -52,7 +52,8 @@ char		**ft_strsplit(char const *s, char c)
 			word_len = 0;
 			while (s[word_len] != c && s[word_len] != '\0')
 				word_len++;
-			ret[i] = ft_strncpy(ft_strnew(word_len), s, word_len);
+			if (!(ret[i] = ft_strncpy(ft_strnew(word_len), s, word_len)))
+				return (NULL);
 			s += word_len;
 			i++;
 		}
