@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 11:31:10 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 12:19:06 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <string.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 void	*ft_memset(void *b, int c, size_t len);
 
@@ -101,5 +102,7 @@ char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 
 char	*ft_itoa(int n);
+
+void	ft_putchar(char c);
 
 #endif
