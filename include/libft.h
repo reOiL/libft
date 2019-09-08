@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 12:59:13 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 13:07:24 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ int		ft_isdigit(int c);
 int		ft_isascii(int c);
 
 int		ft_isprint(int c);
+
+int		ft_isalnum(int c);
 
 int		ft_toupper(int c);
 
