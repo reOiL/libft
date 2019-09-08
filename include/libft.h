@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 10:07:40 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 10:14:56 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 
 char	*ft_strjoin(char const *s1, char const *s2);
+
+char	*ft_strtrim(char const *s);
 
 #endif
