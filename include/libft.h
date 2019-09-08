@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 12:54:31 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 12:59:13 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,5 +114,9 @@ void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
 
 void	ft_putstr_fd(char const *s, int fd);
+
+void	ft_putendl_fd(char const *s, int fd);
+
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
