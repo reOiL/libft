@@ -6,7 +6,7 @@
 #    By: jwebber <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 17:05:02 by jwebber           #+#    #+#              #
-#    Updated: 2019/09/08 12:17:12 by jwebber          ###   ########.fr        #
+#    Updated: 2019/09/08 12:20:02 by jwebber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,8 @@ SRC = src/ft_memset.c \
 	  src/ft_strtrim.c \
 	  src/ft_strsplit.c \
 	  src/ft_itoa.c \
-	  src/ft_putchar.c
+	  src/ft_putchar.c \
+	  src/ft_putstr.c
 
 OBJ = $(SRC:.c=.o)
 
