@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 09:08:37 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/08 09:13:10 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,7 @@ void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 
 char	*ft_strnew(size_t size);
+
+void	ft_strdel(char **as);
 
 #endif
