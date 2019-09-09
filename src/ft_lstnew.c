@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 13:24:33 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/09 08:51:15 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/09 09:02:52 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,12 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		return (NULL);
 	item->next = NULL;
 	item->content = NULL;
+	item->content_size = content_size;
 	if (content != NULL)
 	{
 		item->content = ft_memalloc(content_size);
 		ft_memcpy(item->content, content, content_size);
+		item->content_size = 0;
 	}
-	item->content_size = content_size;
 	return (item);
 }
