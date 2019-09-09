@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 11:30:49 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 15:54:52 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/09 08:46:36 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ static	int		ft_int_len(long long n)
 	if (n == 0)
 		return (1);
 	i = 0;
+	if (n < 1)
+		i++;
 	while (n)
 	{
 		n /= 10;
@@ -45,6 +47,7 @@ char			*ft_itoa(int n)
 		nb = -nb;
 		ret[i] = '-';
 		i++;
+		len--;
 	}
 	while (len >= i)
 	{
