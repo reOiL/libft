@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 09:59:11 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 15:54:39 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/09 08:37:22 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		ret[start] = s[start];
 		start++;
 	}
+	ret[len] = '\0';
 	return (ret);
 }
