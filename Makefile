@@ -6,7 +6,7 @@
 #    By: jwebber <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 17:05:02 by jwebber           #+#    #+#              #
-#    Updated: 2019/09/08 13:51:53 by jwebber          ###   ########.fr        #
+#    Updated: 2019/09/09 18:52:42 by jwebber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,19 +89,16 @@ cc = gcc
 	$(cc) $(INC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
+	@ar rc $(NAME) $(OBJ)
+	@echo "\033[32m$(NAME) link success!\033[32m"
 
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJ)
+	@$(RM) $(OBJ)
+	@echo "\033[32mCleaned!"
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
-
-test: all
-	$(cc) $(TEST_SRC) -o $(TEST_NAME) $(NAME) $(FLAGS) $(INC)
-	./$(TEST_NAME)
-	$(RM) $(TEST_NAME)
