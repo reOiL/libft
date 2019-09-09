@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 12:20:12 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 12:22:29 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/09 08:27:06 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_putstr(char const *s)
 {
-	while (*s != '\0')
-	{
-		ft_putchar(*s);
-		s++;
-	}
+	if (s == NULL)
+		return ;
+	ft_putstr_fd(s, 1);
 }

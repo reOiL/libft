@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 12:25:01 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 12:28:53 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/09 08:29:31 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_putendl(char const *s)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	if (s == NULL)
+		return ;
+	ft_putendl_fd(s, 1);
 }
