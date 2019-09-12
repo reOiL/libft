@@ -6,11 +6,11 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 10:56:29 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/09 08:30:56 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/12 17:27:07 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static int	ft_word_count(char const *s, char c)
 {

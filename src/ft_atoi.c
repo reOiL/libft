@@ -6,11 +6,11 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 20:37:37 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/09 07:36:05 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/12 16:44:37 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {
@@ -21,8 +21,7 @@ int		ft_atoi(const char *str)
 	minus = 1;
 	i = 0;
 	val = 0;
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' ||
-			str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
+	while (ft_isspace(str[i]))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{

@@ -6,13 +6,15 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 09:12:48 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 09:14:38 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/12 17:20:42 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_strdel(char **as)
 {
+	if (as == NULL || *as == NULL)
+		return ;
 	ft_memdel((void **)as);
 }

@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 13:54:09 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/12 16:44:40 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,5 +141,7 @@ void	ft_lstadd(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+int		ft_isspace(char c);
 
 #endif

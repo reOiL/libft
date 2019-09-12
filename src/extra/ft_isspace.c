@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/08 09:53:00 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/12 17:25:55 by jwebber          ###   ########.fr       */
+/*   Created: 2019/09/12 16:41:15 by jwebber           #+#    #+#             */
+/*   Updated: 2019/09/12 16:42:42 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strnequ(char const *s1, char const *s2, size_t n)
+int		ft_isspace(char c)
 {
-	if (s1 == NULL || s2 == NULL)
-		return (1);
-	return (ft_strncmp(s1, s2, n) == 0);
+	return (c == '\t' || c == '\n' ||
+			c == '\v' || c == '\f' ||
+			c == '\r' || c == ' ');
 }

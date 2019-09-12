@@ -6,28 +6,13 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 12:29:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/08 12:31:16 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/12 17:16:54 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_putnbr(int nb)
 {
-	long long ll;
-
-	ll = nb;
-	if (ll == 0)
-	{
-		ft_putchar('0');
-		return ;
-	}
-	if (ll < 0)
-	{
-		ft_putchar('-');
-		ll *= -1;
-	}
-	if (ll / 10 != 0)
-		ft_putnbr(ll / 10);
-	ft_putchar('0' + ll % 10);
+	ft_putnbr_fd(nb, 1);
 }
