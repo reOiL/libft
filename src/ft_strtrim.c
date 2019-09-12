@@ -6,11 +6,11 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 10:14:37 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/09 18:07:56 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/12 18:53:56 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static int	ft_needtrim(char c)
 {

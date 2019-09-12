@@ -1,41 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_wcount.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/08 10:56:29 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/12 19:01:39 by jwebber          ###   ########.fr       */
+/*   Created: 2019/09/12 18:57:32 by jwebber           #+#    #+#             */
+/*   Updated: 2019/09/12 19:00:42 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		**ft_strsplit(char const *s, char c)
+int		ft_wcount(char const *s, char c)
 {
-	char	**ret;
-	int		word_len;
-	int		i;
+	int i;
+	int res;
 
-	if (!s || !(ret = (char **)ft_memalloc(sizeof(char *) * ft_wcount(s, c))))
-		return (NULL);
+	if (s == NULL)
+		return (1);
 	i = 0;
-	while (*s != '\0')
+	res = 0;
+	while (s[i] != '\0')
 	{
-		if (*s != c)
+		if (s[i] != c)
 		{
-			word_len = 0;
-			while (s[word_len] != c && s[word_len] != '\0')
-				word_len++;
-			if (!(ret[i] = ft_strncpy(ft_strnew(word_len), s, word_len)))
-				return (ft_remove_sstr(&ret));
-			s += word_len;
-			i++;
+			res++;
+			while (s[i] != c && s[i] != '\0')
+				i++;
 		}
 		else
-			s++;
+			i++;
 	}
-	ret[i] = NULL;
-	return (ret);
+	return (res + 1);
 }

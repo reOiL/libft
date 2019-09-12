@@ -6,7 +6,7 @@
 #    By: jwebber <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 17:05:02 by jwebber           #+#    #+#              #
-#    Updated: 2019/09/12 17:18:31 by jwebber          ###   ########.fr        #
+#    Updated: 2019/09/12 19:01:34 by jwebber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,9 @@ SRC = src/ft_memset.c \
 	  src/ft_lstadd.c \
 	  src/ft_lstiter.c \
 	  src/ft_lstmap.c \
-	  src/extra/ft_isspace.c
+	  src/extra/ft_isspace.c \
+	  src/extra/ft_remove_sstr.c \
+	  src/extra/ft_wcount.c 
 
 OBJ = $(SRC:.c=.o)
 
@@ -87,19 +89,21 @@ TEST_SRC = test.c
 cc = gcc
 
 .c.o:
-	$(cc) $(INC) $(FLAGS) -c $< -o $@
+	@$(cc) $(INC) $(FLAGS) -c $< -o $@
+	@printf "\e[32m😲 😲 😲  build success \e[36m$<\n"
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
-	@echo "\033[32m$(NAME) link success!\033[32m"
+	@printf "\e[36m 🏁  👍  👍  👍  $(NAME) 👍  👍  👍  🏁  !\n"
 
 all: $(NAME)
 
 clean:
 	@$(RM) $(OBJ)
-	@echo "\033[32mCleaned!"
+	@printf "\e[33mCleaned 😵 😵 😵 😵  !!!\n"
 
 fclean: clean
 	@$(RM) $(NAME)
+	@printf "\e[31mFull cleaned 💀 💀 💀 💀  !!!\n"
 
 re: fclean all
