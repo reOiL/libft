@@ -6,7 +6,7 @@
 /*   By: jwebber <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:59:14 by jwebber           #+#    #+#             */
-/*   Updated: 2019/09/12 19:00:37 by jwebber          ###   ########.fr       */
+/*   Updated: 2019/09/12 19:10:47 by jwebber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -147,5 +147,7 @@ int		ft_isspace(char c);
 void	*ft_remove_sstr(char ***s);
 
 int		ft_wcount(char const *s, char c);
+
+char	*ft_strrev(char *str);
 
 #endif
