@@ -6,7 +6,7 @@
 #    By: jwebber <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 17:05:02 by jwebber           #+#    #+#              #
-#    Updated: 2019/11/14 10:03:56 by jwebber          ###   ########.fr        #
+#    Updated: 2019/12/12 17:58:18 by jwebber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,21 @@ SRC = ft_memset.c \
 	  ft_wcount.c \
 	  ft_strrev.c \
 	  ft_range.c \
-	  get_next_line.c
+	  get_next_line.c \
+	  ft_printf/colored.c \
+	  ft_printf/ft_itoa_base.c \
+	  ft_printf/ft_itoa_base_uns.c \
+	  ft_printf/ft_printf.c \
+	  ft_printf/get_format.c \
+	  ft_printf/helper_numbers.c \
+	  ft_printf/helper_numbers2.c \
+	  ft_printf/print_addr_helper.c \
+	  ft_printf/print_chars_helper.c \
+	  ft_printf/print_float.c \
+	  ft_printf/print_float2.c \
+	  ft_printf/print_ints_helper.c \
+	  ft_printf/print_percent_helper.c \
+	  ft_printf/print_uns_helper.c
 
 OBJ = $(SRC:.c=.o)
 
